@@ -46,7 +46,7 @@ if ( ! class_exists( 'Cr_Contact_Widget' ) ) {
 			extract( $args, EXTR_SKIP );
 			echo $args['before_widget'];
 			if ( $instance['title'] != '' )
-				echo $args['before_title'] . '<a href="' . $instance['href'] . '">' . $instance['title'] . '</a>' . $args['after_title'];
+				echo $args['before_title'] . '<a target="_blank" href="' . $instance['href'] . '">' . $instance['title'] . '</a>' . $args['after_title'];
 
 			if ( $instance['address'] != '' ) {
 				echo '<div class="address"><p>' . $instance['address'] . '</p></div>';
